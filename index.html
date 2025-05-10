@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio de Marketing Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos personalizados para el portafolio */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .seccion-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        .heading-gradient {
+            background: linear-gradient(to right, #6b7280, #374151); /* Gradiente de gris */
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .destacado {
+            color: #6b7280; /* Color de texto destacado */
+        }
+    </style>
+</head>
+<body class="bg-gray-50"> <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#inicio" class="text-xl font-bold text-gray-800">Mi Portafolio</a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#inicio" class="text-gray-700 hover:text-blue-600 transition duration-300">Inicio</a></li>
+                    <li><a href="#acerca-de-mi" class="text-gray-700 hover:text-blue-600 transition duration-300">Acerca de Mí</a></li>
+                    <li><a href="#proyectos" class="text-gray-700 hover:text-blue-600 transition duration-300">Proyectos</a></li>
+                    <li><a href="#habilidades" class="text-gray-700 hover:text-blue-600 transition duration-300">Habilidades</a></li>
+                    <li><a href="#contacto" class="text-gray-700 hover:text-blue-600 transition duration-300">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none" aria-label="Menú">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="menu-movil" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-20">
+        <div class="bg-white w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="menu-cerrar" class="text-gray-700 focus:outline-none" aria-label="Cerrar menú">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#inicio" class="block text-gray-700 hover:text-blue-600 transition duration-300 text-lg">Inicio</a></li>
+                    <li><a href="#acerca-de-mi" class="block text-gray-700 hover:text-blue-600 transition duration-300 text-lg">Acerca de Mí</a></li>
+                    <li><a href="#proyectos" class="block text-gray-700 hover:text-blue-600 transition duration-300 text-lg">Proyectos</a></li>
+                    <li><a href="#habilidades" class="block text-gray-700 hover:text-blue-600 transition duration-300 text-lg">Habilidades</a></li>
+                    <li><a href="#contacto" class="block text-gray-700 hover:text-blue-600 transition duration-300 text-lg">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="inicio" class="seccion-padding bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Hola, soy <span class="text-blue-600">Carol Escobar</span></h1>
+            <p class="text-xl text-gray-600 mb-6">Soy <span class="destacado">Publicista y Especialista en Marketing Digital</span></p>
+            <a href="#proyectos" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300">Ver mis proyectos</a>
+        </div>
+    </section>
+
+    <section id="acerca-de-mi" class="seccion-padding bg-white">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="md:text-left text-center">
+                <h2 class="text-3xl font-semibold heading-gradient mb-4">Acerca de Mí</h2>
+                <p class="text-gray-700 text-lg mb-6">
+                    Soy una persona responsable y comprometida, siempre doy lo mejor de mí en cada tarea. Me esfuerzo por ser atenta y empática, escuchando y respetando a los demás. Valoro el estudio como una herramienta clave para crecer personal y profesionalmente. El respeto guía mi forma de actuar en todo momento.
+                </p>
+                <p class="text-gray-700 text-lg">
+                    Me mantengo actualizado con las últimas tendencias del marketing digital para ofrecer soluciones innovadoras y creativas.
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <img src="https://placehold.co/400x400/EEE/31343C" alt="Tu Foto" class="rounded-full shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="seccion-padding bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold heading-gradient mb-8">Mis Proyectos</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/400x300/EEE/31343C" alt="Proyecto 1" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Nombre del Proyecto 1</h3>
+                        <p class="text-gray-600 text-lg mb-4">Descripción del proyecto y tu rol.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/400x300/EEE/31343C" alt="Proyecto 2" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Nombre del Proyecto 2</h3>
+                        <p class="text-gray-600 text-lg mb-4">Descripción del proyecto y tu rol.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/400x300/EEE/31343C" alt="Proyecto 3" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Nombre del Proyecto 3</h3>
+                        <p class="text-gray-600 text-lg mb-4">Descripción del proyecto y tu rol.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="seccion-padding bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold heading-gradient mb-8 text-center">Mis Habilidades</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <ul class="list-none space-y-2">
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">SEO:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">SEM:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Marketing de Contenidos:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Redes Sociales:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Email Marketing:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Analítica Web:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Google Ads:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Facebook Ads:</span> [Nivel de habilidad]</li>
+                </ul>
+                <ul class="list-none space-y-2">
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Estrategia Digital:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Copywriting:</span> [Nivel de habilidad]</li>
+                     <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Branding:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Diseño Web:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Gestión de Proyectos:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Comunicación:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Liderazgo:</span> [Nivel de habilidad]</li>
+                    <li class="text-gray-700 text-lg"><span class="font-semibold mr-2">Creatividad:</span> [Nivel de habilidad]</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="seccion-padding bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold heading-gradient mb-8">Contacto</h2>
+            <p class="text-gray-700 text-lg mb-4">Puedes contactarme a través de:</p>
+            <p class="text-blue-600 text-lg mb-4">Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
+            <p class="text-blue-600 text-lg">LinkedIn: <a href="https://www.linkedin.com/tuperfil" target="_blank" rel="noopener noreferrer">linkedin.com/tuperfil</a></p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 Mi Portafolio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuCerrar = document.getElementById('menu-cerrar');
+        const menuMovil = document.getElementById('menu-movil');
+        const enlacesMenuMovil = menuMovil.querySelectorAll('a');
+        const enlacesNav = document.querySelectorAll('header nav a');
+        const secciones = document.querySelectorAll('section');
+
+        function toggleMenu() {
+            menuMovil.classList.toggle('hidden');
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        menuCerrar.addEventListener('click', toggleMenu);
+        enlacesMenuMovil.forEach(enlace => {
+            enlace.addEventListener('click', toggleMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!menuMovil.classList.contains('hidden') && !menuMovil.contains(event.target) && event.target !== menuToggle) {
+                toggleMenu();
+            }
+        });
+
+        function actualizarEnlaceActivo() {
+            let scrollPos = window.scrollY + 100;
+            secciones.forEach(seccion => {
+                const seccionTop = seccion.offsetTop;
+                const seccionHeight = seccion.clientHeight;
+                const seccionId = seccion.getAttribute('id');
+
+                if (scrollPos > seccionTop && scrollPos < seccionTop + seccionHeight) {
+                    enlacesNav.forEach(enlace => {
+                        enlace.classList.remove('active');
+                        if (enlace.getAttribute('href').slice(1) === seccionId) {
+                            enlace.classList.add('active');
+                        }
+                    });
+                    enlacesMenuMovil.forEach(enlaceMovil => {
+                        enlaceMovil.classList.remove('active');
+                        if (enlaceMovil.getAttribute('href').slice(1) === seccionId) {
+                            enlaceMovil.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', actualizarEnlaceActivo);
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
